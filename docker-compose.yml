@@ -19,6 +19,8 @@ services:
     image: mongo:latest
     ports:
         - "27017:27017"
+    volumes:
+        - ./data:/data
     networks:
         - isha-bim-net
 
